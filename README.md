@@ -42,4 +42,5 @@
 > * == 与 ===
 > * "use strict"作用
 > * AJAX请求的细节
+> * 函数柯里化（Currying）
 
