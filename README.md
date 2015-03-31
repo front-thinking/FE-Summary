@@ -43,4 +43,5 @@
 > * "use strict"作用
 > * AJAX请求的细节
 > * 函数柯里化（Currying）
+> * 同源策略（比较JSONP和document.domain的不同及优劣）
 

@@ -43,8 +43,14 @@
 > * "use strict"作用
 > * AJAX请求的细节
 > * 函数柯里化（Currying）
+> * 同源策略（比较JSONP和document.domain的不同及优劣）
 
-doctype的作用:doctype告诉浏览器HTML文档用了哪个版本的HTML。HTML4 标准 和HTML4过度版本。
+doctype的作用
+doctype告诉浏览器HTML文档用了哪个版本的HTML。HTML4 标准 和HTML4过度版本。
 随着XML的流行，HTML推出了XHTML标准，其中严格模式严格遵守了XML的规范，例如属性必须有值、标签必须闭合等，
 同时也抛弃了一些不推荐的标签。而XHTML过度版本，则稍微比严格模式松散些，一些不推荐的标签依然可用外。
 再就是HTML5的版本。
+
+
+同源策略（比较JSONP和document.domain的不同及优劣）
+比较：http://adam.kahtava.com/journal/2010/03/18/the-same-origin-policy-jsonp-vs-the-documentdomain-property/
