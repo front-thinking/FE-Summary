@@ -125,3 +125,6 @@ http://baike.baidu.com/link?url=I2l51auZpAcJ8F0-ozRZUWRcCatmQz7PCZ8vdbEzHvCz_yJK
 
 ### 24. 闭包
 参考：我之前写的一篇博客（http://www.cnblogs.com/front-Thinking/p/4317020.html）
+
+### 25. 事件冒泡和事件捕获（及绑定同一元素多个事件的执行顺序等）
+参考：http://www.quirksmode.org/js/events_order.html#link4
