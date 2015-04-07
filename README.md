@@ -92,9 +92,9 @@
  24. 雅虎性能优化的15条规则
 
 ------
- # 答案
+# 答案
 
- ## HTML
+## HTML
  1. ie的某些兼容性问题
  2. HTML5的新特性
  3. canvas画图
@@ -103,7 +103,7 @@
  5. HTML5中引进的data-有什么作用
  6. HTML标准模式和怪异模式有什么不同
  7. 写出你常用的HTML标签
- ## JavaScript
+## JavaScript
  1. 同源策略及跨域请求的方法和原理（比较JSONP和document.domain的不同及优劣，以及HTML5的跨域方案）
  答案：同源策略是客户端脚本（尤其是Javascript）的重要的安全度量标准。它最早出自Netscape Navigator2.0，其目的是防止某个文档或脚本从多个不同源装载。这里的同源指的是：同协议，同域名和同端口。这里说的js跨域是指通过js在不同的域之间进行数据传输或通信，比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据。只要协议、域名、端口有任何一个不同，都被当作是不同的域。
      JSONP：一句话就是利用script标签绕过同源策略，获得一个类似这样的数据，jsonpcallback是页面存在的回调方法，参数就是想得到的json。
@@ -156,7 +156,7 @@
  41. DOM1\DOM2\DOM3都有什么不同
  42. XXS
 
- ## CSS
+## CSS
  1. 圣杯布局
  答案：http://www.elonglau.com/33.html
  2. CSS合并方法
@@ -177,7 +177,7 @@
  12. 使用CSS预处理的优缺点（比方说Sass和Compass等）
  13. * { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点
 
- ## 综合
+## 综合
  1. HTTP状态码
  答案：http://baike.baidu.com/link?url=2Mur0ZYizeDAwgnKKu_REjgsbW-vVbKNA44xxHuz7C4sn6YBtIn2KCMPSSIqQJC0BQsQNxMKQE-EcS8iZPEWg_
  2. Cach-Control
