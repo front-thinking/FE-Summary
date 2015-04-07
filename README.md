@@ -51,6 +51,7 @@
  40. 你如何测试你的JS代码
  41. DOM1\DOM2\DOM3都有什么不同
  42. XXS
+ 43. 常用数组方法
 
 ## CSS
  1. 圣杯布局
@@ -125,7 +126,9 @@
 5. XMLHttpRequest<br>
 答案：http://www.cnblogs.com/beniao/archive/2008/03/29/1128914.html
 6. 事件委托<br>
+答案：http://www.ituring.com.cn/article/467。
 7. 前端模块化（AMD和CommonJS的原理及异同，requirejs的用法）<br>
+答案：http://justineo.github.io/singles/writing-modular-js/
 8. session<br>
 9. Cookie<br>
 10. seaJS的用法及原理，依赖加载的原理、初始化、实现等<br>
@@ -164,6 +167,7 @@
 40. 你如何测试你的JS代码<br>
 41. DOM1\DOM2\DOM3都有什么不同<br>
 42. XXS<br>
+43. 常用数组方法<br>
 
 ## CSS
 1. 圣杯布局<br>
