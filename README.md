@@ -50,7 +50,7 @@
  39. AngularJS双向绑定的原理及实现
  40. 你如何测试你的JS代码
  41. DOM1\DOM2\DOM3都有什么不同
- 42. XXS
+ 42. XSS
  43. 常用数组方法
 
 ## CSS
@@ -198,7 +198,9 @@ function getcookie(){
 39. AngularJS双向绑定的原理及实现<br>
 40. 你如何测试你的JS代码<br>
 41. DOM1\DOM2\DOM3都有什么不同<br>
-42. XXS<br>
+42. XSS<br>
+答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)
+
 43. 常用数组方法<br>
 
 ## CSS
