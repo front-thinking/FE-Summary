@@ -233,6 +233,7 @@ function getcookie(){
 | 在地址栏回车        |  如果值为private或must-revalidate,则只有第一次访问时会访问服务器,以后就不再访问。如果值为no-cache,那么每次都会访问。如果值为max-age,则在过期之前不会重复访问。   |
 | 按后退按扭        |    如果值为private、must-revalidate、max-age,则不会重访问,而如果为no-cache,则每次都重复访问  |
 | 按刷新按扭        |    无论为何值,都会重复访问.  |
+
 3. 项目经历及作用和用到的技术等<br>
 4. SEO<br>
 5. 一个页面从输入 URL 到页面加载完的过程中都发生了什么事情？<br>
