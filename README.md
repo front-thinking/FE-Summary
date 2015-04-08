@@ -165,16 +165,16 @@ function getcookie(){
 <br>
 10. seaJS的用法及原理，依赖加载的原理、初始化、实现等<br>
 11. this问题<br>
-答案：http://www.cnblogs.com/front-Thinking/p/4364337.html
+答案：http://www.cnblogs.com/front-Thinking/p/4364337.html<br>
 12. 模块化原理（作用域）<br>
 13. JavaScript动画算法<br>
 14. 拖拽的实现<br>
 15. JavaScript原型链<br>
 16. 闭包及闭包的用处<br>
-答案：http://www.cnblogs.com/front-Thinking/p/4317020.html
+答案：http://www.cnblogs.com/front-Thinking/p/4317020.html<br>
 17. 常见算法的JS实现（例如：实现将两个不同长度的数组组合，顺序越乱越好，以及其的复杂度）<br>
 18. 事件冒泡和事件捕获<br>
-答案：http://www.quirksmode.org/js/events_order.html#link4
+答案：http://www.quirksmode.org/js/events_order.html#link4<br>
 19. 浏览器检测（能力检测、怪癖检测等）<br>
 20. JavaScript代码测试<br>
 21. call与apply的作用及不同<br>
@@ -199,7 +199,7 @@ function getcookie(){
 40. 你如何测试你的JS代码<br>
 41. DOM1\DOM2\DOM3都有什么不同<br>
 42. XSS<br>
-答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)
+答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)<br>
 
 43. 常用数组方法<br>
 
