@@ -229,6 +229,8 @@ function getcookie(){
 2. Cach-Control<br>
 答案：http://baike.baidu.com/link?url=I2l51auZpAcJ8F0-ozRZUWRcCatmQz7PCZ8vdbEzHvCz_yJKcSSeDmn2cDWfOhrUIqL3KRa7wueujDcEZ9QBN_
 
+| 方法        | 描述  |
+| --------   | :----:  |
 | 打开新窗口	     | 如果指定cache-control的值为private、no-cache、must-revalidate,那么打开新窗口访问时都会重新访问服务器。而如果指定了max-age值,那么在此值内的时间里就不会重新访问服务器,例如：Cache-control: max-age=5 表示当访问此网页后的5秒内再次访问不会去服务器.     |
 | 在地址栏回车        |  如果值为private或must-revalidate,则只有第一次访问时会访问服务器,以后就不再访问。如果值为no-cache,那么每次都会访问。如果值为max-age,则在过期之前不会重复访问。   |
 | 按后退按扭        |    如果值为private、must-revalidate、max-age,则不会重访问,而如果为no-cache,则每次都重复访问  |
