@@ -129,7 +129,7 @@
 6. 事件委托<br>
 答案：http://www.ituring.com.cn/article/467。
 7. 前端模块化（AMD和CommonJS的原理及异同，requirejs的用法）<br>
-答案：http://justineo.github.io/singles/writing-modular-js/
+答案：[使用AMD\CommonJS\ES Harmony编写模块化的JavaScript](http://justineo.github.io/singles/writing-modular-js/)/和[RequireJS中文网](http://www.requirejs.cn/)
 8. session<br>
 9. Cookie<br>
 答案：8与9的知识可以参考：http://www.cnblogs.com/shiyangxt/archive/2008/10/07/1305506.html和http://www.cnblogs.com/Darren_code/archive/2011/11/24/Cookie.html<br>
