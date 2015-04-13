@@ -67,6 +67,8 @@
  11. CSS打包压缩的方法
  12. 使用CSS预处理的优缺点（比方说Sass和Compass等）
  13. * { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点
+ 14. CSS浮动的原理及清除浮动的方法及优缺点
+ 15. CSS垂直居中的方法
 
 ## 综合
  1. HTTP状态码
@@ -189,6 +191,9 @@
 11. CSS打包压缩的方法<br>
 12. 使用CSS预处理的优缺点（比方说Sass和Compass等）<br>
 13. * { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点<br>
+14. CSS浮动的原理及清除浮动的方法及优缺点
+15. CSS水平垂直居中的方法
+答案：[CSS垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)和[CSS水平垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)
 
 ## 综合
 1. HTTP状态码<br>
