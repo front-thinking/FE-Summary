@@ -50,7 +50,7 @@
  39. AngularJS双向绑定的原理及实现
  40. 你如何测试你的JS代码
  41. DOM1\DOM2\DOM3都有什么不同
- 42. XXS
+ 42. XSS
  43. 常用数组方法
 
 ## CSS
@@ -125,26 +125,59 @@
 3. JavaScript字符串转化<br>
 答案：熟悉基本的字符串操作函数，参考http://www.cnblogs.com/front-Thinking/p/4398447.html
 4. JSONP原理及优缺点<br>
+答案：具体JSONP的原理可参考1。JSONP的优点是：它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制；它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持；并且在请求完毕后可以通过调用callback的方式回传结果。JSONP的缺点则是：它只支持GET请求而不支持POST等其它类型的HTTP请求；它只支持跨域HTTP请求这种情况，不能解决不同域的两个页面之间如何进行JavaScript调用的问题。
 5. XMLHttpRequest<br>
 答案：http://www.cnblogs.com/beniao/archive/2008/03/29/1128914.html
 6. 事件委托<br>
 答案：http://www.ituring.com.cn/article/467。
 7. 前端模块化（AMD和CommonJS的原理及异同，requirejs的用法）<br>
-答案：http://justineo.github.io/singles/writing-modular-js/
+答案：[使用AMD\CommonJS\ES Harmony编写模块化的JavaScript](http://justineo.github.io/singles/writing-modular-js/)/和[RequireJS中文网](http://www.requirejs.cn/)
 8. session<br>
 9. Cookie<br>
+答案：8与9的知识可以参考：http://www.cnblogs.com/shiyangxt/archive/2008/10/07/1305506.html和http://www.cnblogs.com/Darren_code/archive/2011/11/24/Cookie.html<br>
+常见的cookie操作包括创建cookie、添加cookie、删除cookie等，相应函数参考：<br>
+
+```javascript
+//添加（daysToLive大于0）cookie/删除（daysToLive为0）cookie
+function setcookie(name,value,daysToLive){
+  var cookie = name + "=" + encodeURIComponent(value);
+  if(typeof daysToLive === "number"){
+    cookie += ";max-age=" + (daysToLive*60*60*24);
+  }
+  document.cookie = cookie;
+}
+//解析cookie,直接getcookie()[name]获取对应的name cookie
+function getcookie(){
+  var cookie = {};
+  var all = document.cookie;
+  if(all === ""){
+    return false;
+  }
+  var list = all.split(";");
+  for(var i=0;i < list.length; i++){
+    var cookie = list[i];
+    var p = cookie.indexOf("=");
+    var name = cookie.substring(0,p);
+    var value = cookie.substring(p+1);
+    value = decodeURIComponent(value);
+    cookie[name] = value;
+  }
+  return cookie;
+}
+```
+<br>
 10. seaJS的用法及原理，依赖加载的原理、初始化、实现等<br>
 11. this问题<br>
-答案：http://www.cnblogs.com/front-Thinking/p/4364337.html
+答案：http://www.cnblogs.com/front-Thinking/p/4364337.html<br>
 12. 模块化原理（作用域）<br>
 13. JavaScript动画算法<br>
 14. 拖拽的实现<br>
 15. JavaScript原型链<br>
 16. 闭包及闭包的用处<br>
-答案：http://www.cnblogs.com/front-Thinking/p/4317020.html
+答案：http://www.cnblogs.com/front-Thinking/p/4317020.html<br>
 17. 常见算法的JS实现（例如：实现将两个不同长度的数组组合，顺序越乱越好，以及其的复杂度）<br>
 18. 事件冒泡和事件捕获<br>
-答案：http://www.quirksmode.org/js/events_order.html#link4
+答案：http://www.quirksmode.org/js/events_order.html#link4<br>
 19. 浏览器检测（能力检测、怪癖检测等）<br>
 20. JavaScript代码测试<br>
 21. call与apply的作用及不同<br>
@@ -168,7 +201,8 @@
 39. AngularJS双向绑定的原理及实现<br>
 40. 你如何测试你的JS代码<br>
 41. DOM1\DOM2\DOM3都有什么不同<br>
-42. XXS<br>
+42. XSS<br>
+答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)<br>
 43. 常用数组方法<br>
 
 ## CSS
@@ -201,10 +235,14 @@
 2. Cach-Control<br>
 答案：http://baike.baidu.com/link?url=I2l51auZpAcJ8F0-ozRZUWRcCatmQz7PCZ8vdbEzHvCz_yJKcSSeDmn2cDWfOhrUIqL3KRa7wueujDcEZ9QBN_
 
-     | 打开新窗口	 | 如果指定cache-control的值为private、no-cache、must-revalidate,那么打开新窗口访问时都会重新访问服务器。而如果指定了max-age值,那么在此值内的时间里就不会重新访问服务器,例如：Cache-control: max-age=5 表示当访问此网页后的5秒内再次访问不会去服务器. |
-     | 在地址栏回车 | 如果值为private或must-revalidate,则只有第一次访问时会访问服务器,以后就不再访问。如果值为no-cache,那么每次都会访问。如果值为max-age,则在过期之前不会重复访问。 |
-     | 按后退按扭	 | 如果值为private、must-revalidate、max-age,则不会重访问,而如果为no-cache,则每次都重复访问. |
-     | 按刷新按扭 	| 无论为何值,都会重复访问.
+| 方法        | 描述  |
+| --------   | :----  |
+| 打开新窗口	     | 如果指定cache-control的值为private、no-cache、must-revalidate,那么打开新窗口访问时都会重新访问服务器。而如果指定了max-age值,那么在此值内的时间里就不会重新访问服务器,例如：Cache-control: max-age=5 表示当访问此网页后的5秒内再次访问不会去服务器.     |
+| 在地址栏回车        |  如果值为private或must-revalidate,则只有第一次访问时会访问服务器,以后就不再访问。如果值为no-cache,那么每次都会访问。如果值为max-age,则在过期之前不会重复访问。   |
+| 按后退按扭        |    如果值为private、must-revalidate、max-age,则不会重访问,而如果为no-cache,则每次都重复访问  |
+| 按刷新按扭        |    无论为何值,都会重复访问.  |
+
+<br>
 3. 项目经历及作用和用到的技术等<br>
 4. SEO<br>
 5. 一个页面从输入 URL 到页面加载完的过程中都发生了什么事情？<br>
