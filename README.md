@@ -52,6 +52,7 @@
  41. DOM1\DOM2\DOM3都有什么不同
  42. XSS
  43. 常用数组方法
+ 44. js数组去重复项
 
 ## CSS
  1. 圣杯布局
@@ -202,6 +203,8 @@ function getcookie(){
 42. XSS<br>
 答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)<br>
 43. 常用数组方法<br>
+44. js数组去重复项<br>
+答案：[js数组去重复项的四种方法](http://www.cnblogs.com/novus/archive/2011/06/30/1921132.html)
 
 ## CSS
 1. 圣杯布局<br>
