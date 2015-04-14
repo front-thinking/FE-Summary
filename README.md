@@ -207,6 +207,8 @@ function getcookie(){
 43. 常用数组方法<br>
 44. js数组去重复项<br>
 答案：[js数组去重复项的四种方法](http://www.cnblogs.com/novus/archive/2011/06/30/1921132.html)
+45. js中的垃圾回收机制<br>
+答案：[JavaScript垃圾回收机制](http://www.cnblogs.com/hustskyking/archive/2013/04/27/garbage-collection.html)
 
 ## CSS
 1. 圣杯布局<br>
