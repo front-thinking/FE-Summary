@@ -208,7 +208,9 @@ function getcookie(){
 44. js数组去重复项<br>
 答案：[js数组去重复项的四种方法](http://www.cnblogs.com/novus/archive/2011/06/30/1921132.html)
 45. js中的垃圾回收机制<br>
-答案：[JavaScript垃圾回收机制](http://www.cnblogs.com/hustskyking/archive/2013/04/27/garbage-collection.html)
+答案：[JavaScript垃圾回收机制](http://www.cnblogs.com/hustskyking/archive/2013/04/27/garbage-collection.html)<br>
+46. 常见的JS设计模式
+
 
 ## CSS
 1. 圣杯布局<br>
@@ -230,10 +232,11 @@ function getcookie(){
 11. CSS打包压缩的方法<br>
 12. 使用CSS预处理的优缺点（比方说Sass和Compass等）<br>
 13. * { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点<br>
-14. CSS浮动的原理及清除浮动的方法及优缺点
-答案：[css-float浮动的深入研究、详解及拓展](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)和[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)及[css清除浮动各种方法](http://www.cnblogs.com/mizzle/archive/2011/07/14/2105961.html)
-15. CSS水平垂直居中的方法
-答案：[CSS垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)和[CSS水平垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)
+14. CSS浮动的原理及清除浮动的方法及优缺点<br>
+答案：[css-float浮动的深入研究、详解及拓展](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)和[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)及[css清除浮动各种方法](http://www.cnblogs.com/mizzle/archive/2011/07/14/2105961.html)<br>
+15. CSS水平垂直居中的方法<br>
+答案：[CSS垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)和[CSS水平垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)<br>
+16. base64的原理及优缺点<br>
 
 ## 综合
 1. HTTP状态码<br>
