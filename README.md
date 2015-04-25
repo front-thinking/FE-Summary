@@ -182,10 +182,14 @@ function getcookie(){
 答案：http://www.quirksmode.org/js/events_order.html#link4<br>
 19. 浏览器检测（能力检测、怪癖检测等）<br>
 20. JavaScript代码测试<br>
+答案：平时在测试方面做的比较少，一般用JSlint检查一些常见的错误。对于功能性的可能会使用基于karma的Jasmine测试框架来做。
 21. call与apply的作用及不同<br>
+答案：绑定this指针，第二个参数不同，apply是类数组，而call是一些列参数。
 22. bind的用法<br>
 23. 变量名提升<br>
+答案：参考16中的博客及评论部分。
 24. == 与 ===<br>
+答案：前者隐式类型转换，后者严格对比。
 25. "use strict"作用<br>
 26. AJAX请求的细节<br>
 27. 函数柯里化（Currying）<br>
@@ -201,7 +205,9 @@ function getcookie(){
 37. 在你的Angular App页面里随意加一个JS文件，会有什么影响<br>
 38. AngularJS directive及自己如何定义directive<br>
 39. AngularJS双向绑定的原理及实现<br>
+答案：AngularJS数据绑定及AngularJS的工作机制，参考《AngularJS up and running》第203页，十三章第一节。
 40. 你如何测试你的JS代码<br>
+答案：平时在测试方面做的比较少，一般用JSlint检查一些常见的错误。对于功能性的可能会使用基于karma的Jasmine测试框架来做。
 41. DOM1\DOM2\DOM3都有什么不同<br>
 42. XSS<br>
 答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)<br>
