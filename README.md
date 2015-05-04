@@ -195,6 +195,7 @@ function getcookie(){
 27. 函数柯里化（Currying）<br>
 28. NodeJS健壮性方面的实践（子进程等）<br>
 29. NodeJS能否用利用多核实现在计算性能上的劣势等<br>
+答案：[《解读Nodejs多核处理模块cluster》](http://blog.fens.me/nodejs-core-cluster/)<br>
 30. jQuery链式调用的原理<br>
 31. ES6及jQuery新引进的Promise有什么用处<br>
 32. NodeJS的优缺点及使用场景<br>
