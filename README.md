@@ -7,6 +7,8 @@
  5. HTML5中引进的data-有什么作用
  6. HTML标准模式和怪异模式有什么不同
  7. 写出你常用的HTML标签
+ 8. 为什么应该尽量少用iframe
+ 9. HTML语义化的理解
 
 ## JavaScript
  1. 同源策略及跨域请求的方法和原理（比较JSONP和document.domain的不同及优劣，以及HTML5的跨域方案）
@@ -113,7 +115,11 @@
 答案：由于历史的原因，各个浏览器在对页面的渲染上存在差异，甚至同一浏览器在不同版本中，对页面的渲染也不同。在W3C标准出台以前，浏览器在对页面的渲染上没有统一规范，产生了差异(Quirks mode或者称为Compatibility Mode)；由于W3C标准的推出，浏览器渲染页面有了统一的标准(CSScompat或称为Strict mode也有叫做Standars mode)，这就是二者最简单的区别。
    W3C标准推出以后，浏览器都开始采纳新标准，但存在一个问题就是如何保证旧的网页还能继续浏览，在标准出来以前，很多页面都是根据旧的渲染方法编写的，如果用的标准来渲染，将导致页面显示异常。为保持浏览器渲染的兼容性，使以前的页面能够正常浏览，浏览器都保留了旧的渲染方法（如：微软的IE）。这样浏览器渲染上就产生了Quircks mode和Standars mode，两种渲染方法共存在一个浏览器上。火狐一直工作在标准模式下，但IE（6，7，8）标准模式与怪异模式差别很大，主要体现在对盒子模型的解释上，这个很重要，下面就重点说这个。那么浏览器究竟该采用哪种模式渲染呢？这就引出的DTD，既是网页的头部声明，浏览器会通过识别DTD而采用相对应的渲染模式：1. 浏览器要使老旧的网页正常工作，但这部分网页是没有doctype声明的，所以浏览器对没有doctype声明的网页采用quirks mode解析。 2. 对于拥有doctype声明的网页，什么浏览器采用何种模式解析，这里有一张详细列表可参考：http://hsivonen.iki.fi/doctype。3. 对于拥有doctype声明的网页，这里有几条简单的规则可用于判断：对于那些浏览器不能识别的doctype声明，浏览器采用strict mode解析。4. 在doctype声明中，没有使用DTD声明或者使用HTML4以下（不包括HTML4）的DTD声明时，基本所有的浏览器都是使用quirks mode呈现，其他的则使用strict mode解析。5. 可以这么说，在现有有doctype声明的网页，绝大多数是采用strict mode进行解析的。6. 在ie6中，如果在doctype声明前有一个xml声明(比如:<?xml version=”1.0″ encoding=”iso-8859-1″?>)，则采用quirks mode解析。这条规则在ie7中已经移除了。
 7. 写出你常用的HTML标签<br>
-答案：根据自己的使用和掌握来写吧。参考http://blog.csdn.net/ithomer/article/details/5277162。
+答案：根据自己的使用和掌握来写吧。参考http://blog.csdn.net/ithomer/article/details/5277162。<br>
+8. 为什么要少用iframe<br>
+答案：[为什么应该减少使用iframe](http://www.williamlong.info/archives/3136.html) <br>
+9. HTML语义化的理解<br>
+答案：用正确的标签表达正确的内容，可以增强网页的易用性（如障碍人士访问等）和搜索引擎的爬取和检索。<br>
 
 
 ## JavaScript
@@ -182,9 +188,9 @@ function getcookie(){
 答案：http://www.quirksmode.org/js/events_order.html#link4<br>
 19. 浏览器检测（能力检测、怪癖检测等）<br>
 20. JavaScript代码测试<br>
-答案：平时在测试方面做的比较少，一般用JSlint检查一些常见的错误。对于功能性的可能会使用基于karma的Jasmine测试框架来做。
+答案：平时在测试方面做的比较少，一般用JSlint检查一些常见的错误。对于功能性的可能会使用基于karma的Jasmine测试框架来做。<br>
 21. call与apply的作用及不同<br>
-答案：绑定this指针，第二个参数不同，apply是类数组，而call是一些列参数。
+答案：绑定this指针，第二个参数不同，apply是类数组，而call是一些列参数。<br>
 22. bind的用法<br>
 23. 变量名提升<br>
 答案：参考16中的博客及评论部分。
@@ -194,6 +200,7 @@ function getcookie(){
 26. AJAX请求的细节<br>
 27. 函数柯里化（Currying）<br>
 28. NodeJS健壮性方面的实践（子进程等）<br>
+答案：同29。<br>
 29. NodeJS能否用利用多核实现在计算性能上的劣势等<br>
 答案：[《解读Nodejs多核处理模块cluster》](http://blog.fens.me/nodejs-core-cluster/)<br>
 30. jQuery链式调用的原理<br>
