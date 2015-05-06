@@ -55,6 +55,7 @@
  42. XSS
  43. 常用数组方法
  44. js数组去重复项
+ 45. js获取服务器精准时间（客户端如何与服务器时间同步）
 
 ## CSS
  1. 圣杯布局
@@ -73,6 +74,7 @@
  14. CSS浮动的原理及清除浮动的方法及优缺点
  15. CSS垂直居中的方法
  16. base64的优缺点及原理
+ 17. CSS reset和normalize的区别
 
 ## 综合
  1. HTTP状态码
@@ -225,6 +227,46 @@ function getcookie(){
 45. js中的垃圾回收机制<br>
 答案：[JavaScript垃圾回收机制](http://www.cnblogs.com/hustskyking/archive/2013/04/27/garbage-collection.html)<br>
 46. 常见的JS设计模式
+45. js获取服务器精准时间（客户端如何与服务器时间同步）<br>
+答案：思路：简而言之就是发送一个ajax请求，然后获取对应的HTTP Header中的time，由于时延等问题造成时间在JS客户端获取后当前时间已经不再是服务器此时的时间，然后用本地的时间减去获取的服务器的时间，这应该就是时间偏移量。再新建一个时间，加上此偏移量应该就是此时此刻服务器的时间。代码如下：<br>
+
+```javascript
+var offset = 0;
+function calcOffset() {
+    var xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    xmlhttp.open("GET", "http://stackoverflow.com/", false);
+    xmlhttp.send();
+
+    var dateStr = xmlhttp.getResponseHeader('Date');
+    var serverTimeMillisGMT = Date.parse(new Date(Date.parse(dateStr)).toUTCString());
+    var localMillisUTC = Date.parse(new Date().toUTCString());
+
+    offset = serverTimeMillisGMT -  localMillisUTC;
+}
+
+function getServerTime() {
+    var date = new Date();
+
+    date.setTime(date.getTime() + offset);
+
+    return date;
+}
+//或者是：
+var start = (new Date()).getTime();
+var serverTime;//服务器时间
+$.ajax({
+    url:"XXXX",
+    success: function(data,statusText,res){
+        var delay = (new Date()).getTime() - start;
+        serverTime = new Date(res.getResponseHeader('Date')).getTime() + delay;
+        console.log(new Date(serverTime));//标准时间
+        console.log((new Date(serverTime)).toTimeString());//转换为时间字符串
+        console.log(serverTime);//服务器时间毫秒数
+    }
+});
+
+
+```
 
 
 ## CSS
@@ -246,12 +288,15 @@ function getcookie(){
 10. CSS在性能优化方面的实践（比方说选择器的效率等）<br>
 11. CSS打包压缩的方法<br>
 12. 使用CSS预处理的优缺点（比方说Sass和Compass等）<br>
+答案：Css预处理器定义了一种新的语言将Css作为目标生成文件，然后开发者就只要使用这种语言进行编码工作了。预处理器通常可以实现浏览器兼容，变量，结构体等功能，代码更加简洁易于维护。让你用一种编程语言的思维来写CSS样式。但是带来的缺点是需要增加设计工作以及学习熟悉成本。<br>
 13. * { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点<br>
 14. CSS浮动的原理及清除浮动的方法及优缺点<br>
-答案：[css-float浮动的深入研究、详解及拓展](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)和[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)及[css清除浮动各种方法](http://www.cnblogs.com/mizzle/archive/2011/07/14/2105961.html)<br>
+答案：而此浮动元素在文档流空出的位置，由后续的(非浮动)元素填充上去：块级元素直接填充上去，若跟浮动元素的范围发生重叠，浮动元素覆盖块级元素。内联元素：有空隙就插入。给元素的float属性赋值后，就是脱离文档流，进行左右浮动，紧贴着父元素(默认为body文本区域)的左右边框。[css-float浮动的深入研究、详解及拓展](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)和[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)及[css清除浮动各种方法](http://www.cnblogs.com/mizzle/archive/2011/07/14/2105961.html)<br>
 15. CSS水平垂直居中的方法<br>
 答案：[CSS垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)和[CSS水平垂直居中总结](http://www.cnblogs.com/dojo-lzz/p/4419596.html)<br>
 16. base64的原理及优缺点<br>
+17. CSS reset和normalize的区别<br>
+答案：reset是将浏览器所有的默认样式进行重置、覆盖，normalize是保留原来浏览器的样式并且尽量在不同浏览器里保持一致。<br>
 
 ## 综合
 1. HTTP状态码<br>
@@ -270,6 +315,7 @@ function getcookie(){
 3. 项目经历及作用和用到的技术等<br>
 4. SEO<br>
 5. 一个页面从输入 URL 到页面加载完的过程中都发生了什么事情？<br>
+答案：［从输入url到页面加载完成发生了什么］（http://fex.baidu.com/blog/2014/05/what-happen/）<br>
 6. 常见组件的实现（如让你实现图片轮播、时间计时等）<br>
 7. HTTP头部包含的信息及作用<br>
 8. HTML\CSS\JS在处理浏览器兼容性方面的实践<br>
