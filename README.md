@@ -326,9 +326,12 @@ $.ajax({
 13. 从你自己的理解来看，你是如何理解面向对象编程的，它解决了什么问题，有什么作用<br>
 14. 你对前端的理解？你为什么学前端？<br>
 15. “渐进增强”和“优雅降级”<br>
+答案：[渐进增强和优雅降级的区别](http://www.cnblogs.com/mofish/p/3822879.html)<br>
 16. 什么是“FOUC”及如何避免（http://blog.csdn.net/kongtoubudui/article/details/12975401）<br>
 17. 页面性能优化方法及其原理<br>
+答案：[web前端页面性能优化小结](http://www.cnblogs.com/mofish/archive/2010/10/12/1849041.html)<br>
 18. POST和GET的异同<br>
+答案：1. get是从服务器上获取数据，post是向服务器传送数据。2. get是把参数数据队列加到提交表单的ACTION属性所指的URL中，值和表单内各个字段一一对应，在URL中可以看到。post是通过HTTP post机制，将表单内各个字段与其内容放置在HTML HEADER内一起传送到ACTION属性所指的URL地址。用户看不到这个过程。 3. 对于get方式，服务器端用Request.QueryString获取变量的值，对于post方式，服务器端用Request.Form获取提交的数据。 4. get安全性非常低，post安全性较高。但是执行效率却比Post方法好。<br> 建议： 1、get方式的安全性较Post方式要差些，包含机密信息的话，建议用Post数据提交方式； 2、在做数据查询时，建议用Get方式；而在做数据添加、修改或删除时，建议用Post方式。<br>
 19. 你是如何了解到并且学习一门技术的<br>
 20. 讲一下你读过的关于前端技术的书<br>
 21. 你未来三年的计划<br>
