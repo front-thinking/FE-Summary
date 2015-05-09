@@ -57,6 +57,7 @@
  44. js数组去重复项
  45. js获取服务器精准时间（客户端如何与服务器时间同步）
  46. 什么是js中的类数组对象
+ 47. Node中exports和module.exports的区别
 
 ## CSS
  1. 圣杯布局
@@ -272,6 +273,9 @@ $.ajax({
 <br>
 46. 什么是js中的类数组对象<br>
 答案：1、它们都有一个合法的 length 属性(0 到 2**32 - 1 之间的正整数)。2、length 属性的值大于它们的最大索引(index)。<br>
+47. Node中exports和module.exports的区别<br>
+答案：[exports 和 module.exports 的区别](https://cnodejs.org/topic/5231a630101e574521e45ef8#554db35aed6f7db13c84919e)<br>
+
 
 
 ## CSS
