@@ -16,7 +16,20 @@
    
 5. HTML5中引进的data-有什么作用
    
-   答案：data-是HTML5新增的一个自定义属性。用以方便开发者在HTML中自定义一些属性来存储和操作数据，同时又不违背HTML的规范，不会带来一些副作用。data-自定义属性非常简单，如下例：<article  id="electriccars"  data-columns="3"  data-index-number="12314"  data-parent="cars">...</article>。通过JS去获取自定义属性非常简单，可以通过 getAttribute()传递全部名称来获取，也可以使用 dataset 属性集来获取。如：var article = document.querySelector('#electriccars');article.dataset.columns; // "3"  article.dataset.indexNumber ;// "12314"  article.dataset.parent ;//
+   答案：data-是HTML5新增的一个自定义属性。用以方便开发者在HTML中自定义一些属性来存储和操作数据，同时又不违背HTML的规范，不会带来一些副作用。data-自定义属性非常简单，如下例：
+   
+   ``` html
+   <article  id="electriccars"  data-columns="3"  data-index-number="12314"  data-parent="cars">...</article>。
+   ```
+   
+   通过JS去获取自定义属性非常简单，可以通过 getAttribute()传递全部名称来获取，也可以使用 dataset 属性集来获取。如：
+   
+   ``` javascript
+   var article = document.querySelector('#electriccars');
+   article.dataset.columns; // "3"  
+   article.dataset.indexNumber ;// "12314"  
+   article.dataset.parent ;//
+   ```
    
 6. 浏览器标准模式和怪异模式有什么不同
    
@@ -267,6 +280,14 @@
 49. Node中exports和module.exports的区别
     
     答案：[exports 和 module.exports 的区别](https://cnodejs.org/topic/5231a630101e574521e45ef8#554db35aed6f7db13c84919e)
+    
+50. 异步编程的了解
+    
+    答案：
+    
+51. Grunt和Gulp的区别
+    
+    
 
 ## CSS
 
