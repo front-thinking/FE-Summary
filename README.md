@@ -144,6 +144,8 @@
    ```
    
 10. seaJS的用法及原理，依赖加载的原理、初始化、实现等
+
+    答案：[模块化开发之sea.js实现原理总结](http://www.lxway.com/85146452.htm)，简言之就是要解决三个问题，分别为：①模块加载（插入script标签来加载模块。你在页面看不到标签是因为模块被加载完后删除了对应的script标签。）②模块依赖（按依赖顺序依赖）③命名冲突（封装一层define，所有的都成为了局部变量，并通过exports暴漏出去）。
     
 11. this问题
     
@@ -159,13 +161,13 @@
     
 16. 闭包及闭包的用处
     
-    答案：http://www.cnblogs.com/front-Thinking/p/4317020.html
+    答案：[聊一下JS中的作用域scope和闭包closure](http://www.cnblogs.com/front-Thinking/p/4317020.html)
     
 17. 常见算法的JS实现（例如：实现将两个不同长度的数组组合，顺序越乱越好，以及其的复杂度）
     
 18. 事件冒泡和事件捕获
     
-    答案：http://www.quirksmode.org/js/events_order.html#link4
+    答案：[事件冒泡和事件捕获](http://www.quirksmode.org/js/events_order.html#link4)
     
 19. 浏览器检测（能力检测、怪癖检测等）
     
@@ -432,4 +434,8 @@
     
 25. 浏览器加载原理和过程
     
-26. 答案：[浏览器加载过程和原理](http://kb.cnblogs.com/page/129756/)。
+    答案：[浏览器加载过程和原理](http://kb.cnblogs.com/page/129756/)。
+    
+26. HTTP如何实现缓存的。
+
+    答案：[HTTP协议：缓存](http://kb.cnblogs.com/page/166267/)
