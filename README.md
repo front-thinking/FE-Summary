@@ -152,16 +152,24 @@
     答案：[别再为了this发愁了------JS中的this机制](http://www.cnblogs.com/front-Thinking/p/4364337.html)
     
 12. 模块化原理（作用域）
+
+    答案：其中seajs的原理参考第10题。大致原理都类似。
     
 13. JavaScript动画算法
     
 14. 拖拽的实现
     
 15. JavaScript原型链及JavaScript如何实现继承、类的
+
+    答案：[JS 面向对象之继承 -- 原型链](http://www.cnblogs.com/yangjinjin/archive/2013/02/01/2889368.html),即每个构造函数都有一个原型对象，原型对象包含一个指向构造函数的指针（prototype），而实例则包含一个指向原型对象的内部指针（__proto__），通过将子构造函数的原型指向父构造函数的实例。
     
-16. 闭包及闭包的用处
+    类的实现如，[js 基于原型的类实现详解](http://blog.csdn.net/lihongxun945/article/details/8061311)
+    
+16. 闭包及闭包的用处，以及闭包可能造成的不良后果。
     
     答案：[聊一下JS中的作用域scope和闭包closure](http://www.cnblogs.com/front-Thinking/p/4317020.html)
+    
+    闭包的优劣详解如，[javascript 闭包的好处及坏处](http://blog.csdn.net/vuturn/article/details/43055279)，简言之就是好处能够实现封装和缓存等，坏处就是消耗内存、不正当使用会造成内存溢出的问题。
     
 17. 常见算法的JS实现（例如：实现将两个不同长度的数组组合，顺序越乱越好，以及其的复杂度）
     
@@ -179,7 +187,9 @@
     
     答案：绑定this指针，第二个参数不同，apply是类数组，而call是一些列参数。
     
-22. bind的用法
+22. bind的用法，以及如何实现bind的函数和需要注意的点
+
+    答案：
     
 23. 变量名提升
     
