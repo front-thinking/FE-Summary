@@ -89,11 +89,11 @@
    
 5. XMLHttpRequest
    
-   答案：http://www.cnblogs.com/beniao/archive/2008/03/29/1128914.html
+   答案：[轻松掌握XMLHttpRequest对象](http://www.cnblogs.com/beniao/archive/2008/03/29/1128914.html)
    
 6. 事件委托
    
-   答案：http://www.ituring.com.cn/article/467。
+   答案：使用事件委托技术能让你避免对特定的每个节点添加事件监听器；相反，事件监听器是被添加到它们的父元素上。事件监听器会分析从子元素冒泡上来的事件，找到是哪个子元素的事件。
    
 7. 前端模块化（AMD和CommonJS的原理及异同，seajs和requirejs的异同和用法）
    
@@ -105,7 +105,7 @@
    
 9. Cookie
    
-   答案：8与9的知识可以参考：http://www.cnblogs.com/shiyangxt/archive/2008/10/07/1305506.html和http://www.cnblogs.com/Darren_code/archive/2011/11/24/Cookie.html
+   答案：8与9的知识可以参考：[参考1](http://www.cnblogs.com/shiyangxt/archive/2008/10/07/1305506.html)和[参考2](http://www.cnblogs.com/Darren_code/archive/2011/11/24/Cookie.html)
    
    常见的cookie操作包括创建cookie、添加cookie、删除cookie等，相应函数参考：
    
