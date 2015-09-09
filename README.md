@@ -99,6 +99,8 @@
    
    答案：[使用AMD\CommonJS\ES Harmony编写模块化的JavaScript](http://justineo.github.io/singles/writing-modular-js/)/和[RequireJS中文网](http://www.requirejs.cn/)
    
+   [SeaJS和RequireJS最大的不同](http://www.douban.com/note/283566440/)，其中AMD和CMD的区别可以看[玉伯在知乎上的回答](http://www.zhihu.com/question/20351507/answer/14859415)
+   
 8. session
    
 9. Cookie
