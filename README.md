@@ -117,7 +117,7 @@
      var cookie = name + "=" + encodeURIComponent(value);
    
      if(typeof daysToLive === "number"){
-   	cookie += ";max-age=" + (daysToLive*60*60*24);
+   	    cookie += ";max-age=" + (daysToLive*60*60*24);
      }
      document.cookie = cookie;
    }
@@ -128,16 +128,16 @@
      var cookie = {};
      var all = document.cookie;
      if(all === ""){
-   	return false;
+   	    return false;
      }
      var list = all.split(";");
      for(var i=0;i < list.length; i++){
-   	var cookie = list[i];
-   	var p = cookie.indexOf("=");
-   	var name = cookie.substring(0,p);
-   	var value = cookie.substring(p+1);
-   	value = decodeURIComponent(value);
-   	cookie[name] = value;
+   	    var cookie = list[i];
+   	    var p = cookie.indexOf("=");
+   	    var name = cookie.substring(0,p);
+    	var value = cookie.substring(p+1);
+    	value = decodeURIComponent(value);
+    	cookie[name] = value;
      }
      return cookie;
    }
