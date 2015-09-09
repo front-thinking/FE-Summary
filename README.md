@@ -147,7 +147,7 @@
     
 11. this问题
     
-    答案：http://www.cnblogs.com/front-Thinking/p/4364337.html
+    答案：[别再为了this发愁了------JS中的this机制](http://www.cnblogs.com/front-Thinking/p/4364337.html)
     
 12. 模块化原理（作用域）
     
