@@ -200,6 +200,8 @@
     答案：前者隐式类型转换，后者严格对比。
     
 25. "use strict"作用
+
+    答案：[Javascript 严格模式详解](http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html)
     
 26. AJAX请求的细节和原理
     
@@ -222,6 +224,10 @@
 33. JS中random的概率问题
     
 34. 客户端存储及他们的异同（例如：cookie, sessionStorage和localStorage等）
+
+    共同点：都是保存在浏览器端，且同源的。
+    区别：1、cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。2、cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下。3、存储大小限制也不同，cookie数据不能超过4k，同时因为每次http请求都会携带cookie，所以cookie只适合保存很小的数据，如会话标识。sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。4、数据有效期不同，sessionStorage：仅在当前浏览器窗口关闭前有效，自然也就不可能持久保持；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据；cookie只在设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭。5、作用域不同，sessionStorage不在不同的浏览器窗口中共享，即使是同一个页面；localStorage 在所有同源窗口中都是共享的；cookie也是在所有同源窗口中都是共享的。6、Web Storage 支持事件通知机制，可以将数据更新的通知发送给监听者。Web Storage 的 api 接口使用更方便。
+
     
 35. AngularJS的文件管理及打包（包括模板打包及请求、JS的打包和请求等）
     
@@ -245,7 +251,7 @@
     
     答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)
     
-43. 常用数组方法
+43. 常用数组方法和数组算法（如数组去重、求交集、并集等）
     
 44. js数组去重复项
     
@@ -312,6 +318,7 @@
     答案：
     
 51. Grunt和Gulp的区别
+
     
     
 
@@ -370,6 +377,10 @@
 17. CSS reset和normalize的区别
     
     答案：reset是将浏览器所有的默认样式进行重置、覆盖，normalize是保留原来浏览器的样式并且尽量在不同浏览器里保持一致。
+    
+18. link和@import的区别
+
+    答案：本质上他们都是为了引入外部css样式的，但是有区别如下：①link属于XHTML标签，而@import完全是CSS提供的一种方式。②加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS 会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。③兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。④使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
 
 
 
