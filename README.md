@@ -207,6 +207,8 @@
     
 26. AJAX请求的细节和原理
     
+    答案：[jQuery ajax](http://www.w3school.com.cn/jquery/ajax_ajax.asp)
+    
 27. 函数柯里化（Currying）
     
 28. NodeJS健壮性方面的实践（子进程等）
@@ -220,8 +222,12 @@
 30. jQuery链式调用的原理
     
 31. ES6及jQuery新引进的Promise有什么用处
+
+    答案：
     
 32. NodeJS的优缺点及使用场景
+    
+    答案：[NodeJS优缺点及适用场景讨论](http://blog.csdn.net/xiaemperor/article/details/38234979)
     
 33. JS中random的概率问题
     
@@ -235,13 +241,19 @@
     
 36. AngularJS的JS模块管理及实践
     
+    答案：[AngularJS —— 使用模块组织你的代码](http://www.oschina.net/translate/angularjs-organizing-your-code-with-modules)
+    
 37. 在你的Angular App页面里随意加一个JS文件，会有什么影响
     
+    答案：这个啥问题XX。
+    
 38. AngularJS directive及自己如何定义directive
+
+    答案：
     
 39. AngularJS双向绑定的原理及实现
     
-    答案：AngularJS数据绑定及AngularJS的工作机制，参考《AngularJS up and running》第203页，十三章第一节。
+    答案：AngularJS数据绑定及AngularJS的工作机制，参考《AngularJS up and running》第203页，十三章第一节。简单说检查数据有无更新，仅在以下事件发生时，即：XHR请求、页面加载、用户交互事件等。
     
 40. 你如何测试你的JS代码
     
@@ -323,7 +335,13 @@
     
 51. Grunt和Gulp的区别
 
+52. AngularJS中service\factory\provider的区别
     
+    答案:讲的非常不错，可以看看。[Differences Between Providers In AngularJS](http://blog.xebia.com/2013/09/01/differences-between-providers-in-angularjs/)和stackoverflow上的回答[Service vs provider vs factory](http://stackoverflow.com/questions/15666048/service-vs-provider-vs-factory)。如果英文看的不爽，这里有一篇中文的，还不错[那伤不起的provider们啊](http://hellobug.github.io/blog/angularjs-providers/)。
+
+53. JavaScript中异步编程的几种方式
+
+    答案：参加阮一峰前辈写的[Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)，简单说就是1回调函数2事件监听3发布/订阅4promise
     
 
 ## CSS
@@ -461,6 +479,18 @@
     
     答案：[浏览器加载过程和原理](http://kb.cnblogs.com/page/129756/)。
     
-26. HTTP如何实现缓存的。
+26. HTTP如何实现缓存的
 
     答案：[HTTP协议：缓存](http://kb.cnblogs.com/page/166267/)
+    
+27. HTTP和HTTPS的区别
+    
+    答案：[听大神说https和http区别](http://network.51cto.com/art/201502/465280.htm#rd?sukey=b0cb5c5b9e5013037ef7b04e199bc517bd68aadcae9a70034fef1f357950718e4662c416245563c75696d481de7c98d3)
+
+28. TCP和UDP的区别
+
+    答案：[ TCP和UDP之间的区别](http://feinibuke.blog.51cto.com/1724260/340272/)
+    
+29. TCP的拥塞控制
+
+    答案:[TCP的拥塞控制](http://blog.csdn.net/sicofield/article/details/9708383)
