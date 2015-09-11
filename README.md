@@ -249,7 +249,7 @@
     
 38. AngularJS directive及自己如何定义directive
 
-    答案：
+    答案：[AngularJS之directive](http://www.cnblogs.com/front-Thinking/p/4802035.html)
     
 39. AngularJS双向绑定的原理及实现
     
@@ -334,6 +334,8 @@
     答案：
     
 51. Grunt和Gulp的区别
+    
+    答案：[Gulp vs Grunt](http://www.benben.cc/blog/?p=407)
 
 52. AngularJS中service\factory\provider的区别
     
@@ -348,7 +350,7 @@
 
 1. 圣杯布局
    
-   答案：http://www.elonglau.com/33.html
+   答案：[圣杯布局](http://chen106106.iteye.com/blog/1631865)
    
 2. CSS合并方法
    
@@ -356,11 +358,11 @@
    
 3. 盒子模型
    
-   答案：http://www.w3school.com.cn/css/css_boxmodel.asp
+   答案：参考HTML中第11题。
    
 4. CSS定位
    
-   答案：http://www.cnblogs.com/fsjohnhuang/p/3967350.html
+   答案：[Position各属性值详解](http://www.cnblogs.com/fsjohnhuang/p/3967350.html)和[CSS中的绝对定位与相对定位](http://www.cnblogs.com/jiqing9006/archive/2012/07/26/2610586.html),注意的是定位的参照：relative参照于自己该出现的位置，而absolute参照于祖先元素中与自己最近的已定位元素(relative或者absolute)直到body元素。
    
 5. CSS动画原理
    
@@ -375,6 +377,8 @@
 8. flexbox布局
    
 9. 块级元素和行内元素的异同
+    
+    答案：参照HTML中的第10题。
    
 10. CSS在性能优化方面的实践（比方说选择器的效率等）
     
@@ -386,6 +390,8 @@
     
 13. { box-sizing: border-box; }这条CSS规则是干嘛的，有什么优点
     
+    答案：[让CSS布局更加直观：box-sizing](http://www.cnblogs.com/front-Thinking/p/4394901.html)
+    
 14. CSS浮动的原理及清除浮动的方法及优缺点
     
     答案：而此浮动元素在文档流空出的位置，由后续的(非浮动)元素填充上去：块级元素直接填充上去，若跟浮动元素的范围发生重叠，浮动元素覆盖块级元素。内联元素：有空隙就插入。给元素的float属性赋值后，就是脱离文档流，进行左右浮动，紧贴着父元素(默认为body文本区域)的左右边框。[css-float浮动的深入研究、详解及拓展](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)和[那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)及[css清除浮动各种方法](http://www.cnblogs.com/mizzle/archive/2011/07/14/2105961.html)
@@ -396,13 +402,15 @@
     
 16. base64的原理及优缺点
     
+    答案：[从原理上搞定编码-- Base64编码](http://www.cnblogs.com/chengxiaohui/articles/3951129.html)和[关于base64编码的原理及实现](http://www.cnblogs.com/hongru/archive/2012/01/14/2321397.html)，优点是大大缩小了大小（33%），可以加密，减少了http请求，图片更新没有上传和清缓存了；缺点是需要消耗CPU进行编解码、增大了CSS、浏览器支持方面吧。具体可参考：[小tip: base64:URL背景图片与web页面性能优化](http://www.zhangxinxu.com/wordpress/2012/04/base64-url-image-%E5%9B%BE%E7%89%87-%E9%A1%B5%E9%9D%A2%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/)
+    
 17. CSS reset和normalize的区别
     
     答案：reset是将浏览器所有的默认样式进行重置、覆盖，normalize是保留原来浏览器的样式并且尽量在不同浏览器里保持一致。
     
 18. link和@import的区别
 
-    答案：本质上他们都是为了引入外部css样式的，但是有区别如下：①link属于XHTML标签，而@import完全是CSS提供的一种方式。②加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS 会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。③兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。④使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
+    答案：本质上他们都是为了引入外部css样式的，但是有区别如下：①link属于XHTML标签，而@import完全是CSS提供的一种方式。②加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS 会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。③兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。④使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。可以参考知乎上的问题[Normalize.css 与传统的 CSS Reset 有哪些区别？](http://www.zhihu.com/question/20094066)
 
 
 
@@ -410,7 +418,7 @@
 
 1. HTTP状态码
    
-   答案：http://baike.baidu.com/link?url=2Mur0ZYizeDAwgnKKu_REjgsbW-vVbKNA44xxHuz7C4sn6YBtIn2KCMPSSIqQJC0BQsQNxMKQE-EcS8iZPEWg_
+   答案：[HTTP状态码大全](http://www.cnblogs.com/lxinxuan/archive/2009/10/22/1588053.html)，需要记住常见的。比较简明的可以直接参照百度百科[HTTP状态码](http://baike.baidu.com/link?url=AH6tSqJ3BggCDyxm799uHviR-j9xVj9BMWq5NzZi6uLzBenVRzNja8wJqb9EHvevL7pdxgaKuBL90RHpPXXz0_)
    
 2. Cach-Control
    
