@@ -171,7 +171,9 @@
     
     闭包的优劣详解如，[javascript 闭包的好处及坏处](http://blog.csdn.net/vuturn/article/details/43055279)，简言之就是好处能够实现封装和缓存等，坏处就是消耗内存、不正当使用会造成内存溢出的问题。
     
-17. 常见算法的JS实现（例如：实现将两个不同长度的数组组合，顺序越乱越好，以及其的复杂度）
+17. 常见算法的JS实现（如快排、冒泡等）
+
+    答案：[常用排序算法之JavaScript实现](http://www.cnblogs.com/ywang1724/p/3946339.html#3037096)
     
 18. 事件冒泡和事件捕获
     
@@ -252,6 +254,8 @@
     答案：1. [《浅谈javascript函数劫持》](http://www.xfocus.net/articles/200712/963.html) 2. [《xss零碎指南》](http://www.cnblogs.com/hustskyking/p/xss-snippets.html)
     
 43. 常用数组方法和数组算法（如数组去重、求交集、并集等）
+    
+    答案：[javascript常用数组算法总结](http://www.cnblogs.com/front-Thinking/p/4797440.html)
     
 44. js数组去重复项
     
