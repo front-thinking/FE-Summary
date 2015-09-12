@@ -55,9 +55,11 @@
    
    答案：用正确的标签表达正确的内容，可以增强网页的易用性（如障碍人士访问等）和搜索引擎的爬取和检索。HTML5新增的语义化标签如header\section\article\footer等。
    
-10. 行内元素和块级元素的异同
+10. 行内元素和块级元素的异同及img类似的特殊性
 
     答案：①行内元素与块级元素直观上的区别，行内元素会在一条直线上排列，都是同一行的，水平方向排列②块级元素可以包含行内元素和块级元素。行内元素不能包含块级元素。③行内元素与块级元素属性的不同，主要是盒模型属性上(行内元素设置width无效，height无效(可以设置line-height)，margin上下无效，padding上下无效)。④行内元素转换为块级元素,通过设置display:block
+    
+        img\input\textarea等是特殊的行内元素，确切的说是inline-block元素。
     
 11. 盒模型，及在浏览器兼容方面的异同
 
@@ -344,6 +346,10 @@
 53. JavaScript中异步编程的几种方式
 
     答案：参加阮一峰前辈写的[Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)，简单说就是1回调函数2事件监听3发布/订阅4promise
+
+54. Nodejs开发踩过的坑
+
+    答案：[那些年，在nodejs上踩过的坑](http://www.cnblogs.com/lengyuhong/archive/2012/05/31/2527016.html)
     
 
 ## CSS
@@ -411,6 +417,18 @@
 18. link和@import的区别
 
     答案：本质上他们都是为了引入外部css样式的，但是有区别如下：①link属于XHTML标签，而@import完全是CSS提供的一种方式。②加载顺序的差别。当一个页面被加载的时候（就是被浏览者浏览的时候），link引用的CSS会同时被加载，而@import引用的CSS 会等到页面全部被下载完再被加载。所以有时候浏览@import加载CSS的页面时开始会没有样式（就是闪烁），网速慢的时候还挺明显。③兼容性的差别。由于@import是CSS2.1提出的所以老的浏览器不支持，@import只有在IE5以上的才能识别，而link标签无此问题。④使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。可以参考知乎上的问题[Normalize.css 与传统的 CSS Reset 有哪些区别？](http://www.zhihu.com/question/20094066)
+    
+19. 左右上下margin合并重合的问题
+
+    答案：上下margin重合，并选取最大的作为间距。左右margin不合并，间距等于相加。
+    
+20. rem字体
+
+    答案：[CSS3的REM设置字体大小](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
+    
+21. CSS3新增的特性
+    
+    答案：[深入了解 CSS3 新特性](http://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/index.html)
 
 
 
@@ -439,7 +457,7 @@
    
 5. 一个页面从输入 URL 到页面加载完的过程中都发生了什么事情？
    
-   答案：［从输入url到页面加载完成发生了什么］（http://fex.baidu.com/blog/2014/05/what-happen/）
+   答案：［从输入url到页面加载完成发生了什么](http://fex.baidu.com/blog/2014/05/what-happen/)和stackoverflow的[答案](http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser)
    
 6. 常见组件的实现（如让你实现图片轮播、时间计时等）
    
@@ -463,7 +481,9 @@
     
     答案：[渐进增强和优雅降级的区别](http://www.cnblogs.com/mofish/p/3822879.html)
     
-16. 什么是“FOUC”及如何避免（http://blog.csdn.net/kongtoubudui/article/details/12975401）
+16. 什么是“FOUC”及如何避免
+    
+    答案：[什么是FOUC？如何避免FOUC？](http://blog.csdn.net/kongtoubudui/article/details/12975401),其实原理很清楚：当样式表晚于结构性html加载，当加载到此样式表时，页面将停止之前的渲染。此样式表被下载和解析后，将重新渲染页面，也就出现了短暂的花屏现象。解决方法：使用LINK标签将样式表放在文档HEAD中。
     
 17. 页面性能优化方法及其原理
     
@@ -475,7 +495,7 @@
     
 19. 你是如何了解到并且学习一门技术的
     
-20. 讲一下你读过的关于前端技术的书
+20. 讲一下你读过的和正在读或者研究的关于前端技术的书或者技术
     
 21. 你未来三年的计划
     
@@ -504,3 +524,8 @@
 29. TCP的拥塞控制
 
     答案:[TCP的拥塞控制](http://blog.csdn.net/sicofield/article/details/9708383)
+    
+30. PC端和移动端前端开发的区别
+    
+    答案：1、交互事件，PC鼠标控制点击精确，而移动端触控范围大2、界面布局，PC端可以有复杂布局，移动端多为单列布局3、与native之间的互动4、技术框架的选型更看重移动端性能
+    
