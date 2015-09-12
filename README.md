@@ -350,6 +350,22 @@
 54. Nodejs开发踩过的坑
 
     答案：[那些年，在nodejs上踩过的坑](http://www.cnblogs.com/lengyuhong/archive/2012/05/31/2527016.html)
+
+55. AngularJS中依赖注入的理解
+
+    答案：[Understanding Dependency Injection](https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection)
+    
+56. JS中判断是否为数组
+    
+    答案：isArray/typeof/instanceof,还有toString方法返回的字符串（数组返回'[Object Array]'）。
+    
+57. Nodejs内存溢出
+
+    答案：[如何自己检查NodeJS的代码是否存在内存泄漏](http://www.w3ctech.com/topic/842)
+
+58. 关于BFC和hasLayout
+    
+    答案：[关于Block Formatting Context－－BFC和IE的hasLayout](http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html)
     
 
 ## CSS
