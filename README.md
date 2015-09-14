@@ -175,8 +175,8 @@
     
 17. 常见算法的JS实现（如快排、冒泡等）
 
-    答案：[常用排序算法之JavaScript实现](http://www.cnblogs.com/ywang1724/p/3946339.html#3037096)
-    
+    答案：[常用排序算法之JavaScript实现](http://www.cnblogs.com/ywang1724/p/3946339.html#3037096)。这里有一篇阮一峰老师写的，非常不错的快排算法，[快速排序（Quicksort）的Javascript实现](http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)。
+    和[排序算法](http://javascript.ruanyifeng.com/library/sorting.html).
 18. 事件冒泡和事件捕获
     
     答案：[事件冒泡和事件捕获](http://www.quirksmode.org/js/events_order.html#link4)
