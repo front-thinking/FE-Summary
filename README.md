@@ -367,6 +367,34 @@
     
     答案：[关于Block Formatting Context－－BFC和IE的hasLayout](http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html)
     
+59. 统计页面中使用最多的三个标签
+    
+    答案：思路大致是首先获取页面中所有用到的标签数组，然后依次遍历，将用到的标签放置新的hash表里，每次检测到相同标签对应的key的value值加1.最后转为数组，排序，取前三个。实现方法如下：
+    
+    ``` javascript
+    function findTags(){
+        var allTags = document.getElementsByTagName("*"),
+            hash = {};
+        
+        for(var i = 0, j = allTags.length; i < j; i++){
+            var temp = allTags[i].tagName;
+            if(hash[temp]){
+                hash[temp]++;
+            }else{
+                hash[temp] = 1;
+            }
+        }
+        
+        var sortable = [];
+        for (var i in hash){
+           sortable.push([i, hash[i]]);
+         }
+        sortable.sort(function(a, b) {return b[1] - a[1]});
+        
+        return sortable.splice(0,3);
+     }     
+    ```
+    
 
 ## CSS
 
