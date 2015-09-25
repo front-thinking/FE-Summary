@@ -402,6 +402,14 @@
 61. 在浏览器地址栏按回车、F5、Ctrl+F5刷新网页的区别
 
     答案：[在浏览器地址栏按回车、F5、Ctrl+F5刷新网页的区别](http://blog.csdn.net/yui/article/details/6584401)
+
+62. 判断两个对象的相等
+
+    答案: [How to determine equality for two JavaScript objects?](http://stackoverflow.com/questions/201183/how-to-determine-equality-for-two-javascript-objects)
+
+63. 选取两个数的最大公约数
+
+    答案：[JS how to find the greatest common divisor](http://stackoverflow.com/questions/17445231/js-how-to-find-the-greatest-common-divisor)
     
 
 ## CSS
