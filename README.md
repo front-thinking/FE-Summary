@@ -269,7 +269,7 @@
     
 43. 常用数组方法和数组算法（如数组去重、求交集、并集等）
     
-    答案：[javascript常用数组算法总结](http://www.cnblogs.com/front-Thinking/p/4797440.html)
+    答案：[javascript常用数组算法总结](http://www.cnblogs.com/front-Thinking/p/4797440.html)和[Merge/flatten an Array of Arrays in JavaScript](http://stackoverflow.com/questions/10865025/merge-flatten-an-array-of-arrays-in-javascript)
     
 44. js数组去重复项
     
@@ -394,6 +394,14 @@
         return sortable.splice(0,3);
      }     
     ```
+  
+60. JS内存泄露及解决方法
+
+    答案：[JS内存泄露及解决方法](http://www.cnblogs.com/carekee/articles/1733847.html)
+    
+61. 在浏览器地址栏按回车、F5、Ctrl+F5刷新网页的区别
+
+    答案：[在浏览器地址栏按回车、F5、Ctrl+F5刷新网页的区别](http://blog.csdn.net/yui/article/details/6584401)
     
 
 ## CSS
@@ -572,4 +580,14 @@
 30. PC端和移动端前端开发的区别
     
     答案：1、交互事件，PC鼠标控制点击精确，而移动端触控范围大2、界面布局，PC端可以有复杂布局，移动端多为单列布局3、与native之间的互动4、技术框架的选型更看重移动端性能
+    
+39. 浏览器工作原理
+
+    答案：[现代浏览器的工作原理](http://blog.jobbole.com/12749/)
+    
+## 附赠一篇老外总结的面试问题和JS的一些常见怪癖
+
+1. [Interview Questions](http://www.thatjsdude.com/interview/)
+
+2. [JavaScript-Garden](http://bonsaiden.github.io/JavaScript-Garden/)
     
