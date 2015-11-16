@@ -225,7 +225,7 @@
     
 31. ES6及jQuery新引进的Promise有什么用处
 
-    答案：
+    答案：[JavaScript Promise](http://www.html5rocks.com/zh/tutorials/es6/promises/)和[JavaScript Promise Mini Book](http://liubin.github.io/promises-book/)
     
 32. NodeJS的优缺点及使用场景
     
@@ -592,6 +592,10 @@
 39. 浏览器工作原理
 
     答案：[现代浏览器的工作原理](http://blog.jobbole.com/12749/)
+
+40. 浏览器重绘（repaint）和重排（reflow）
+
+    答案：[浏览器重绘和重排](http://www.cnblogs.com/front-Thinking/p/4782950.html)
     
 ## 附赠一篇老外总结的面试问题和JS的一些常见怪癖
 
