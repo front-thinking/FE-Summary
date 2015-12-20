@@ -223,7 +223,7 @@
     
 30. jQuery链式调用的原理
     
-31. ES6及jQuery新引进的Promise有什么用处
+31. ES6及jQuery新引进的Promise有什么用处、Promise的原理
 
     答案：[JavaScript Promise](http://www.html5rocks.com/zh/tutorials/es6/promises/)和[JavaScript Promise Mini Book](http://liubin.github.io/promises-book/)
     
