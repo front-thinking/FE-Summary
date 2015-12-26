@@ -491,7 +491,7 @@
 
     答案：上下margin重合，并选取最大的作为间距。左右margin不合并，间距等于相加。
     
-20. rem字体
+20. rem字体大小设置
 
     答案：[CSS3的REM设置字体大小](http://www.w3cplus.com/css3/define-font-size-with-css3-rem)
     
