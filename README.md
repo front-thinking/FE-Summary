@@ -606,6 +606,16 @@
 
     答案：[浏览器重绘和重排](http://www.cnblogs.com/front-Thinking/p/4782950.html)
     
+41. 常见的浏览器内核和浏览器内核的理解
+
+42. 离线存储工作原理
+
+43. 离线包如何调试
+
+44. 浏览器多个标签间的通信
+
+45. CSS优化、提升性能的方法
+    
 ## 附赠一篇老外总结的面试问题和JS的一些常见怪癖
 
 1. [Interview Questions](http://www.thatjsdude.com/interview/)
