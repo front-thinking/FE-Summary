@@ -419,6 +419,17 @@
 
     答案：
 
+66. `escape()`, `decodeURIComponent()`, `decodeURI`之间的区别是什么？
+    答案：
+    * 传递参数时需要使用encodeURIComponent，这样组合的url才不会被#等特殊字符截断。
+    *  进行url跳转时可以整体使用encodeURI
+    * js使用数据时可以使用escape
+    * escape对0-255以外的unicode值进行编码时输出%u****格式，其它情况下escape，encodeURI，encodeURIComponent编码结果相同。
+    另外：
+    * escape不编码字符有69个：*，+，-，.，/，@，_，0-9，a-z，A-Z
+    * encodeURI不编码字符有82个：!，#，$，&，'，(，)，*，+，,，-，.，/，:，;，=，?，@，_，~，0-9，a-z，A-Z
+    * encodeURIComponent不编码字符有71个：!， '，(，)，*，-，.，_，~，0-9，a-z，A-Z
+
 ## CSS
 
 1. 圣杯布局
