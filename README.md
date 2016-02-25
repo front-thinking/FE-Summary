@@ -111,7 +111,7 @@
 
    常见的cookie操作包括创建cookie、添加cookie、删除cookie等，相应函数参考：
 
-   ``` ​javascript
+   ``` javascript
    //添加（daysToLive大于0）cookie/删除（daysToLive为0）cookie
 
    function setcookie(name,value,daysToLive){
