@@ -143,6 +143,11 @@
      }
      return cookies;
    }
+
+   //删除某个cookie
+   function deletecookie( name ) {
+      document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
    ```
 
 10. seaJS的用法及原理，依赖加载的原理、初始化、实现等
