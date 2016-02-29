@@ -147,6 +147,7 @@
    //删除某个cookie
    function deletecookie( name ) {
       document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+      //或者  document.cookie = name + '=; expires=' + (new Date(1970)).toGMTString();
     }
    ```
 
@@ -439,7 +440,7 @@
 
 1. 圣杯布局
 
-   答案：[圣杯布局](http://chen106106.iteye.com/blog/1631865)
+   答案：[圣杯布局](http://chen106106.iteye.com/blog/1631865) [参考资料](http://alistapart.com/article/holygrail)
 
 2. CSS合并方法
 
@@ -532,7 +533,7 @@
    | 打开新窗口  | 如果指定cache-control的值为private、no-cache、must-revalidate,那么打开新窗口访问时都会重新访问服务器。而如果指定了max-age值,那么在此值内的时间里就不会重新访问服务器,例如：Cache-control: max-age=5 表示当访问此网页后的5秒内再次访问不会去服务器. |
    | 在地址栏回车 | 如果值为private或must-revalidate,则只有第一次访问时会访问服务器,以后就不再访问。如果值为no-cache,那么每次都会访问。如果值为max-age,则在过期之前不会重复访问。 |
    | 按后退按扭  | 如果值为private、must-revalidate、max-age,则不会重访问,而如果为no-cache,则每次都重复访问 |
-   | 按刷新按扭  | 无论为何值,都会重复访问.                            |
+   | 按刷新按扭  | 无论为何值,都会重复访问.                           |
 
 3. 项目经历及作用和用到的技术等
 
@@ -631,6 +632,9 @@
 44. 浏览器多个标签间的通信
 
 45. CSS优化、提升性能的方法
+
+46. 浏览器缓存策略
+    答案： http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html
 
 ## 附赠一篇老外总结的面试问题和JS的一些常见怪癖
 
